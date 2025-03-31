@@ -19,7 +19,7 @@
       "role": "Contributor"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Alexnsk83\\LaravelExchange1C\\": "src/"
