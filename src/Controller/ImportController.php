@@ -7,11 +7,11 @@
  */
 declare(strict_types=1);
 
-namespace Bigperson\LaravelExchange1C\Controller;
+namespace Alexnsk83\LaravelExchange1C\Controller;
 
-use Bigperson\Exchange1C\Exceptions\Exchange1CException;
-use Bigperson\Exchange1C\Services\CatalogService;
-use Bigperson\LaravelExchange1C\Jobs\CatalogServiceJob;
+use Alexnsk83\Exchange1C\Exceptions\Exchange1CException;
+use Alexnsk83\Exchange1C\Services\CatalogService;
+use Alexnsk83\LaravelExchange1C\Jobs\CatalogServiceJob;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;

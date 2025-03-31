@@ -7,10 +7,10 @@
  */
 declare(strict_types=1);
 
-namespace Bigperson\LaravelExchange1C;
+namespace Alexnsk83\LaravelExchange1C;
 
-use Bigperson\Exchange1C\Interfaces\EventDispatcherInterface;
-use Bigperson\Exchange1C\Interfaces\EventInterface;
+use Alexnsk83\Exchange1C\Interfaces\EventDispatcherInterface;
+use Alexnsk83\Exchange1C\Interfaces\EventInterface;
 use Illuminate\Contracts\Events\Dispatcher;
 
 /**

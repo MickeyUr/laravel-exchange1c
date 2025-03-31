@@ -7,12 +7,12 @@
  */
 declare(strict_types=1);
 
-namespace Bigperson\LaravelExchange1C\Jobs;
+namespace Alexnsk83\LaravelExchange1C\Jobs;
 
-use Bigperson\Exchange1C\Services\AuthService;
-use Bigperson\Exchange1C\Services\CatalogService;
-use Bigperson\Exchange1C\Services\CategoryService;
-use Bigperson\Exchange1C\Services\OfferService;
+use Alexnsk83\Exchange1C\Services\AuthService;
+use Alexnsk83\Exchange1C\Services\CatalogService;
+use Alexnsk83\Exchange1C\Services\CategoryService;
+use Alexnsk83\Exchange1C\Services\OfferService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
