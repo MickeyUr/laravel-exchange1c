@@ -7,11 +7,11 @@
  */
 declare(strict_types=1);
 
-namespace Alexnsk83\LaravelExchange1C\Controller;
+namespace Bigperson\LaravelExchange1C\Controller;
 
-use Alexnsk83\Exchange1C\Exceptions\Exchange1CException;
-use Alexnsk83\Exchange1C\Services\CatalogService;
-use Alexnsk83\LaravelExchange1C\Jobs\CatalogServiceJob;
+use Bigperson\Exchange1C\Exceptions\Exchange1CException;
+use Bigperson\Exchange1C\Services\CatalogService;
+use Bigperson\LaravelExchange1C\Jobs\CatalogServiceJob;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;
@@ -46,7 +46,7 @@ class ImportController extends Controller
     {
         $mode = $request->get('mode');
         $type = $request->get('type');
-        $this->log('requsest: '.print_r($request->all(), true));
+        $this->log('request: '.print_r($request->all(), true));
 
         try {
             if ($type == 'catalog') {

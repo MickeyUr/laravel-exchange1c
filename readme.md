@@ -11,13 +11,7 @@
 ## Установка
 Установить зависимости
 ```
-composer require bigperson/laravel-exchange1c
-```
-
-### Для Laravel 5.4 и ниже 
-Добавить сервис провайдер Exchange1CServiceProvider в `config/app.php`
-```php
-Bigperson\LaravelExchange1C\Exchange1CServiceProvider::class
+composer require alexnsk83/laravel-exchange1c
 ```
  
 ### Опубликовать конфиги

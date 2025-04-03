@@ -7,18 +7,19 @@
  */
 declare(strict_types=1);
 
-namespace Alexnsk83\LaravelExchange1C\Jobs;
+namespace Bigperson\LaravelExchange1C\Jobs;
 
-use Alexnsk83\Exchange1C\Services\AuthService;
-use Alexnsk83\Exchange1C\Services\CatalogService;
-use Alexnsk83\Exchange1C\Services\CategoryService;
-use Alexnsk83\Exchange1C\Services\OfferService;
+use Bigperson\Exchange1C\Services\AuthService;
+use Bigperson\Exchange1C\Services\CatalogService;
+use Bigperson\Exchange1C\Services\CategoryService;
+use Bigperson\Exchange1C\Services\OfferService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Http\Request;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class CatalogServiceJob implements ShouldQueue
@@ -46,6 +47,7 @@ class CatalogServiceJob implements ShouldQueue
 
     public function handle(): void
     {
+        Log::debug('CatalogServiceJob handle', ['requestData' => $this->requestData, 'sessionData' => $this->sessionData]);
         $mode = $this->requestData['mode'];
         $request = (new Request())->replace($this->requestData);
         $session = app()->make(Session::class);
@@ -68,7 +70,12 @@ class CatalogServiceJob implements ShouldQueue
             ->when(OfferService::class)
             ->needs(Request::class)
             ->give('fakeRequest');
+        app()
+            ->when(OfferService::class)
+            ->needs(Request::class)
+            ->give('fakeRequest');
         $service = app()->make(CatalogService::class);
+        Log::debug('CatalogServiceJob handle', ['service' => $service, 'mode' => $mode]);
         $service->$mode();
     }
 
