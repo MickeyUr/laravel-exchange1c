@@ -14,6 +14,7 @@ use Bigperson\Exchange1C\Services\CatalogService;
 use Bigperson\Exchange1C\Services\CategoryService;
 use Bigperson\Exchange1C\Services\OfferService;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Http\Request;
@@ -77,6 +78,7 @@ class CatalogServiceJob implements ShouldQueue
         $service = app()->make(CatalogService::class);
         Log::debug('CatalogServiceJob handle', ['service' => $service, 'mode' => $mode]);
         $service->$mode();
+        Log::debug('CatalogServiceJob done');
     }
 
     /**

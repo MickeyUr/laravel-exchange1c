@@ -47,6 +47,7 @@ class ImportController extends Controller
         $mode = $request->get('mode');
         $type = $request->get('type');
         $this->log('request: '.print_r($request->all(), true));
+        $this->log('headers: '.print_r($request->header(), true));
 
         try {
             if ($type == 'catalog') {
@@ -70,6 +71,7 @@ class ImportController extends Controller
                     $request->all(),
                     $request->session()->all()
                 )
+                    ->delay(now()->addSeconds(10))
                     ->onQueue(config('exchange1c.queue'));
                 $response = "success\n";
 
