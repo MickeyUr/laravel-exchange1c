@@ -19,7 +19,7 @@
       "email": "jalex21@mail.ru"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Bigperson\\LaravelExchange1C\\": "src/"
