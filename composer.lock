@@ -7,16 +7,16 @@
     "content-hash": "df5302a5e0adf1be50ce8acee995a5cc",
     "packages": [
         {
-            "name": "alex8bits/commerceml",
+            "name": "mickeyur/commerceml",
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/alex8bits/php-commerceml.git",
+                "url": "https://github.com/mickeyur/php-commerceml.git",
                 "reference": "aed07b0657867a1ec9ce10fdf0e094c7f05be81e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alex8bits/php-commerceml/zipball/aed07b0657867a1ec9ce10fdf0e094c7f05be81e",
+                "url": "https://api.github.com/repos/mickeyur/php-commerceml/zipball/aed07b0657867a1ec9ce10fdf0e094c7f05be81e",
                 "reference": "aed07b0657867a1ec9ce10fdf0e094c7f05be81e",
                 "shasum": ""
             },
@@ -56,32 +56,32 @@
                 }
             ],
             "description": "Library for parsing CommerceML files",
-            "homepage": "https://github.com/alex8bits/php-commerceml",
+            "homepage": "https://github.com/mickeyur/php-commerceml",
             "keywords": [
                 "1c",
                 "commerceml"
             ],
             "support": {
-                "source": "https://github.com/alex8bits/php-commerceml/tree/1.0.1"
+                "source": "https://github.com/mickeyur/php-commerceml/tree/1.0.1"
             },
             "time": "2025-04-11T14:25:33+00:00"
         },
         {
-            "name": "alex8bits/exchange1c",
+            "name": "mickeyur/exchange1c",
             "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/alex8bits/exchange1c.git",
+                "url": "https://github.com/mickeyur/exchange1c.git",
                 "reference": "b15e364bc38e05b9c330c9c90ec1d0973afd28cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alex8bits/exchange1c/zipball/b15e364bc38e05b9c330c9c90ec1d0973afd28cc",
+                "url": "https://api.github.com/repos/mickeyur/exchange1c/zipball/b15e364bc38e05b9c330c9c90ec1d0973afd28cc",
                 "reference": "b15e364bc38e05b9c330c9c90ec1d0973afd28cc",
                 "shasum": ""
             },
             "require": {
-                "alex8bits/commerceml": "^1.0.0",
+                "mickeyur/commerceml": "^1.0.0",
                 "php": ">=8.0"
             },
             "require-dev": {
@@ -111,7 +111,7 @@
                 }
             ],
             "description": "Catalog Loader from 1c - CommerceML protocol",
-            "homepage": "https://github.com/alex8bits/exchange1c",
+            "homepage": "https://github.com/mickeyur/exchange1c",
             "keywords": [
                 "1c",
                 "1c-exchange",
@@ -119,7 +119,7 @@
                 "commerceml"
             ],
             "support": {
-                "source": "https://github.com/alex8bits/exchange1c/tree/1.0.2"
+                "source": "https://github.com/mickeyur/exchange1c/tree/1.0.2"
             },
             "time": "2025-04-14T07:46:07+00:00"
         },

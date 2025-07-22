@@ -11,7 +11,7 @@
 ## Установка
 Установить зависимости
 ```
-composer require alex8bits/laravel-exchange1c
+composer require mickeyur/laravel-exchange1c
 ```
  
 ### Опубликовать конфиги
